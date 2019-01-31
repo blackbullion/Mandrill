@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Tests\Mandrill;
+namespace Blackbullion\Tests\Mandrill;
 
-use BlueBayTravel\Mandrill\MandrillServiceProvider;
+use Blackbullion\Mandrill\MandrillServiceProvider;
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
 
 abstract class AbstractTestCase extends AbstractPackageTestCase

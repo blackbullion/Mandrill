@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Mandrill;
+namespace Blackbullion\Mandrill;
 
 use Mandrill as BaseMandrill;
 

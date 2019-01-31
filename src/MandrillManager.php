@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Mandrill;
+namespace Blackbullion\Mandrill;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
@@ -19,7 +19,7 @@ class MandrillManager extends AbstractManager
     /**
      * The factory instance.
      *
-     * @var \BlueBayTravel\Mandrill\MandrillFactory
+     * @var \Blackbullion\Mandrill\MandrillFactory
      */
     protected $factory;
 
@@ -27,7 +27,7 @@ class MandrillManager extends AbstractManager
      * Create a new mandrill manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \BlueBayTravel\Mandrill\MandrillFactory $factory
+     * @param \Blackbullion\Mandrill\MandrillFactory $factory
      *
      * @return void
      */
@@ -43,7 +43,7 @@ class MandrillManager extends AbstractManager
      *
      * @param array $config
      *
-     * @return \BlueBayTravel\Mandrill\Mandrill
+     * @return \Blackbullion\Mandrill\Mandrill
      */
     protected function createConnection(array $config)
     {
@@ -63,7 +63,7 @@ class MandrillManager extends AbstractManager
     /**
      * Get the factory instance.
      *
-     * @return \BlueBayTravel\Mandrill\MandrillFactory
+     * @return \Blackbullion\Mandrill\MandrillFactory
      */
     public function getFactory()
     {

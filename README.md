@@ -24,13 +24,13 @@ composer require bluebaytravel/mandrill
 Add the service provider to `config/app.php` in the `providers` array.
 
 ```php
-BlueBayTravel\Mandrill\MandrillServiceProvider::class
+Blackbullion\Mandrill\MandrillServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
 
 ```php
-'Mandrill' => BlueBayTravel\Mandrill\Facades\Mandrill::class
+'Mandrill' => Blackbullion\Mandrill\Facades\Mandrill::class
 ```
 
 ## Configuration
@@ -59,7 +59,7 @@ The Mandrill class is a wrapper around `mandrill\mandrill` package.
 
 #### MandrillManager
 
-This is the class of most interest. It is bound to the ioc container as `mandrill` and can be accessed using the `Facades\Mandrill` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of [Graham Campbell's](https://github.com/GrahamCampbell) [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `BlueBayTravel\Mandrill\Mandrill`.
+This is the class of most interest. It is bound to the ioc container as `mandrill` and can be accessed using the `Facades\Mandrill` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of [Graham Campbell's](https://github.com/GrahamCampbell) [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `Blackbullion\Mandrill\Mandrill`.
 
 #### Facades\Mandrill
 
@@ -74,15 +74,15 @@ Here you can see an example of just how simple this package is to use. Out of th
 
 ```php
 // You can alias this in config/app.php.
-use BlueBayTravel\Mandrill\Facades\Mandrill;
+use Blackbullion\Mandrill\Facades\Mandrill;
 
 Mandrill::users();
 ```
 
-The Mandrill manager will behave like it is a `BlueBayTravel\Mandrill\Mandrill`. If you want to call specific connections, you can do that with the connection method:
+The Mandrill manager will behave like it is a `Blackbullion\Mandrill\Mandrill`. If you want to call specific connections, you can do that with the connection method:
 
 ```php
-use BlueBayTravel\Mandrill\Facades\Mandrill;
+use Blackbullion\Mandrill\Facades\Mandrill;
 
 // Writing this…
 Mandrill::connection('main')->users();
@@ -103,7 +103,7 @@ Mandrill::setDefaultConnection('alternative'); // The default is now alternative
 If you prefer to use dependency injection over facades like me, then you can inject the manager:
 
 ```php
-use BlueBayTravel\Mandrill\MandrillManager;
+use Blackbullion\Mandrill\MandrillManager;
 
 class Foo
 {

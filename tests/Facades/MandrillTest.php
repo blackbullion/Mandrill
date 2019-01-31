@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Tests\Mandrill;
+namespace Blackbullion\Tests\Mandrill;
 
-use BlueBayTravel\Mandrill\Facades\Mandrill;
-use BlueBayTravel\Mandrill\MandrillManager;
+use Blackbullion\Mandrill\Facades\Mandrill;
+use Blackbullion\Mandrill\MandrillManager;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class MandrillTest extends AbstractTestCase

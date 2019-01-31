@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Mandrill\Facades;
+namespace Blackbullion\Mandrill\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

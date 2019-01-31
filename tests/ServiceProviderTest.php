@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Tests\Mandrill;
+namespace Blackbullion\Tests\Mandrill;
 
-use BlueBayTravel\Mandrill\Mandrill;
-use BlueBayTravel\Mandrill\MandrillFactory;
-use BlueBayTravel\Mandrill\MandrillManager;
+use Blackbullion\Mandrill\Mandrill;
+use Blackbullion\Mandrill\MandrillFactory;
+use Blackbullion\Mandrill\MandrillManager;
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 class ServiceProviderTest extends AbstractTestCase

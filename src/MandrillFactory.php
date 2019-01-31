@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace BlueBayTravel\Mandrill;
+namespace Blackbullion\Mandrill;
 
 class MandrillFactory
 {
@@ -18,7 +18,7 @@ class MandrillFactory
      *
      * @param array $config
      *
-     * @return \BlueBayTravel\Mandrill\Mandrill
+     * @return \Blackbullion\Mandrill\Mandrill
      */
     public function make(array $config)
     {
@@ -30,7 +30,7 @@ class MandrillFactory
      *
      * @param array $config
      *
-     * @return \BlueBayTravel\Mandrill\Mandrill
+     * @return \Blackbullion\Mandrill\Mandrill
      */
     protected function getClient(array $config)
     {

@@ -1,5 +1,5 @@
 {
-    "name": "bluebaytravel/mandrill",
+    "name": "blackbullion/mandrill",
     "description": "Laravel 5 Mandrill API Wrapper",
     "keywords": ["mandrill", "laravel"],
     "license": "MIT",
@@ -10,25 +10,25 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "graham-campbell/manager": "^2.3",
-        "illuminate/contracts": "5.1.*|5.2.*|5.3.*|5.4.*",
-        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "php": ">=7.0",
+        "graham-campbell/manager": "^4.2",
+        "illuminate/contracts": "^5.7",
+        "illuminate/support": "^5.7",
         "mandrill/mandrill": "1.0.*"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.1",
-        "mockery/mockery": "^0.9.4",
-        "phpunit/phpunit": "^4.8|^5.0"
+        "graham-campbell/testbench": "^5.2",
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^7.5"
     },
     "autoload": {
         "psr-4": {
-            "BlueBayTravel\\Mandrill\\": "src"
+            "Blackbullion\\Mandrill\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BlueBayTravel\\Tests\\Mandrill\\": "tests"
+            "Blackbullion\\Tests\\Mandrill\\": "tests"
         }
     },
     "config": {
